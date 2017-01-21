@@ -2,6 +2,8 @@
 
 This repository is a RxJava backport of Java 8's [JavaSealedUnions](https://github.com/pakoito/JavaSealedUnions) library.
 
+For the RxJava 2.X version please go to [RxSealedUnions2](https://github.com/pakoito/RxSealedUnions2).
+
 ## ACKNOWLEDGEMENTS
 This library was heavily inspired by [RxEither](https://github.com/eleventigers/rxeither) and the wonderful [Domain Driven Design](https://fsharpforfunandprofit.com/ddd/) (DDD) talk by [Scott Wlaschin](https://github.com/swlaschin). Another similar talk with the full [Tennis kata](http://www.codingdojo.org/cgi-bin/index.pl?KataTennis) we'll use as an example below is [Types + Properties = Software](https://channel9.msdn.com/Events/FSharp-Events/fsharpConf-2016/Types-Properties-Software) by [Mark Seemann](https://github.com/ploeh).
 
