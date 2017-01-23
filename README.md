@@ -4,7 +4,7 @@ This repository is a RxJava backport of Java 8's [JavaSealedUnions](https://gith
 
 For the RxJava 2.X version please go to [RxSealedUnions2](https://github.com/pakoito/RxSealedUnions2).
 
-## Examples
+## EXAMPLES
 
 You can see RxSealedUnions used through the [Functional Android Reference app](https://github.com/pakoito/FunctionalAndroidReference) released as a companion example for the talk on [Fully Reactive Apps](http://www.pacoworks.com/2016/11/02/fully-reactive-apps-at-droidcon-uk-2016-2/) at Droidcon UK 2016.
 
