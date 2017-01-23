@@ -4,8 +4,9 @@ This repository is a RxJava backport of Java 8's [JavaSealedUnions](https://gith
 
 For the RxJava 2.X version please go to [RxSealedUnions2](https://github.com/pakoito/RxSealedUnions2).
 
-## ACKNOWLEDGEMENTS
-This library was heavily inspired by [RxEither](https://github.com/eleventigers/rxeither) and the wonderful [Domain Driven Design](https://fsharpforfunandprofit.com/ddd/) (DDD) talk by [Scott Wlaschin](https://github.com/swlaschin). Another similar talk with the full [Tennis kata](http://www.codingdojo.org/cgi-bin/index.pl?KataTennis) we'll use as an example below is [Types + Properties = Software](https://channel9.msdn.com/Events/FSharp-Events/fsharpConf-2016/Types-Properties-Software) by [Mark Seemann](https://github.com/ploeh).
+## Examples
+
+You can see RxSealedUnions used through the [Functional Android Reference app](https://github.com/pakoito/FunctionalAndroidReference) released for the talk on [Fully Reactive Apps](http://www.pacoworks.com/2016/11/02/fully-reactive-apps-at-droidcon-uk-2016-2/) at Droidcon UK 2016.
 
 ## DISTRIBUTION
 Add as a dependency to your `build.gradle`
@@ -40,6 +41,9 @@ or to your `pom.xml`
         <version>1.1.0</version>
     </dependency>
 ```
+
+## ACKNOWLEDGEMENTS
+This library was heavily inspired by [RxEither](https://github.com/eleventigers/rxeither) and the wonderful [Domain Driven Design](https://fsharpforfunandprofit.com/ddd/) (DDD) talk by [Scott Wlaschin](https://github.com/swlaschin). Another similar talk with the full [Tennis kata](http://www.codingdojo.org/cgi-bin/index.pl?KataTennis) we'll use as an example below is [Types + Properties = Software](https://channel9.msdn.com/Events/FSharp-Events/fsharpConf-2016/Types-Properties-Software) by [Mark Seemann](https://github.com/ploeh).
 
 ## RATIONALE
 RxSealedUnions brings unions into idiomatic Java 6 using Reactive Extensions to allow for better domain modelling. It can also help representing sealed classes, but that is not the main focus. Chaining operations and monadic composition using RxSealedUnions is also outside the scope of the library, but any union can be lifted to Observables as shown by [RxEither](https://github.com/eleventigers/rxeither).
