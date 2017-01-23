@@ -6,7 +6,7 @@ For the RxJava 2.X version please go to [RxSealedUnions2](https://github.com/pak
 
 ## Examples
 
-You can see RxSealedUnions used through the [Functional Android Reference app](https://github.com/pakoito/FunctionalAndroidReference) released for the talk on [Fully Reactive Apps](http://www.pacoworks.com/2016/11/02/fully-reactive-apps-at-droidcon-uk-2016-2/) at Droidcon UK 2016.
+You can see RxSealedUnions used through the [Functional Android Reference app](https://github.com/pakoito/FunctionalAndroidReference) released as a companion example for the talk on [Fully Reactive Apps](http://www.pacoworks.com/2016/11/02/fully-reactive-apps-at-droidcon-uk-2016-2/) at Droidcon UK 2016.
 
 ## DISTRIBUTION
 Add as a dependency to your `build.gradle`
