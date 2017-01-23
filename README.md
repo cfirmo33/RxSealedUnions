@@ -174,8 +174,8 @@ public LoggedInAccount login(String id){
     Union4.Factory<User, Group, Administrator, Guest> quartetFactory = GenericUnions.quartetFactory();
     Union4<User, Group, Administrator, Guest> user =
                                                 database.getAccount(id)
-                                                    ? quartetFactory.third(database.requestAdmin(id)
-                                                    : quartetFactory.first(database.requestUser(id))
+                                                    ? quartetFactory.third(database.requestAdmin(id))
+                                                    : quartetFactory.first(database.requestUser(id));
     LoggedInAccount account = new LoggedInAcctount(id, System.currentTimeMillis(), user);
     return account;
 }
@@ -195,11 +195,11 @@ public class Salute {
     private static final Either.Factory<Dog, Neighbour> FACTORY = GenericUnions.eitherFactory();
 
     public static Salute dog(String name, int paws) {
-        return new Salute(FACTORY.left(new Dog(name, paws)));
+        return new Salute(FACTORY.first(new Dog(name, paws)));
     }
 
     public static Salute neighbour(String name, String favouriteFood, boolean isLiked) {
-        return new Salute(FACTORY.right(new Neighbour(name, favouriteFood, isLiked)));
+        return new Salute(FACTORY.second(new Neighbour(name, favouriteFood, isLiked)));
     }
 
     private final Union2<Dog, Neighbour> either;
